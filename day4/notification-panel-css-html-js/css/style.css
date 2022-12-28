@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+:root{
+    --color-primary-red:hsl(1, 90%, 64%);
+    --color-primary-blue:hsl(219, 85%, 26%);
+
+    /* Natural color */
+
+    --color-white:hsl(0, 0%, 100%);
+    --color-very-light-gravish-blue:hsl(210, 60%, 98%);
+    --color-light-gravishg-blue-1:hsl(210, 60%, 98%);
+    --color-light-gravish-blue-2:hsl(210, 60%, 98%);
+    --color-gravish-blue:hsl(219, 14%, 63%);
+    --color-Dark-grayish-blue:hsl(219, 12%, 42%);
+    --color-Very-dark-blue:hsl(224, 21%, 14%);
+    
+    /* Font Size */
+    --Font-size-paragraph:16px;
+
+    /* Font-family */
+    --Font-family:'Plus Jakarta Sans', sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    transition: .2s linear;
+}
+
+/* utility */
+.hilighted-content{
+    color: var(--color-gravish-blue);
+}
+
+.hilighted-content:hover{
+    color: var(--color-primary-blue);
+    cursor: pointer;
+}
+
+
+
+body{
+    background-color: var(--color-light-gravishg-blue-1);
+    font-family: var(--Font-family);
+   
+}
+
+
+
+main{
+    
+    max-width: 100%;
+    max-height: 100%;
+}
+
+main .notification{
+    max-width: 600px;
+    margin: auto;
+    background-color: var(--color-white);
+    padding: 20px 20px 10px 20px;
+}
+
+main .notification .titles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .notification .titles h3 span{
+    background-color: var(--color-primary-blue);
+    color: var(--color-white);
+    font-weight: 500;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-left: 10px;
+
+}
+
+main .notification .titles input[type=submit]{
+    font-size: 12px;
+    color: var(--color-gravish-blue);
+}
+
+main .notification .titles p:hover{
+    color: var(--color-primary-blue);
+    cursor: pointer;
+}
+
+main .notification .first-notification{
+    display: flex;
+    padding: 10px;
+    background-color: var(--color-light-gravishg-blue-1);
+    margin-top: 20px;
+    border-radius: 5px;
+
+}
+
+main .notification .first-notification p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 20px;
+    
+}
+
+main .notification .first-notification p span{
+    color: var(--color-gravish-blue);
+}
+
+main .notification .first-notification img{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+
+
+/* botification second */
+
+.second-notification{
+    display: flex;
+    padding: 10px;
+    background-color: var(--color-light-gravishg-blue-1);
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.second-notification p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 20px;
+    
+}
+
+.second-notification div {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 20px;
+    
+}
+
+.second-notification img{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+
+/* third */
+.gray-text{
+    color: var(--color-gravish-blue);
+}
+
+
+.discription{
+    background-color:var(--color-light-gravishg-blue-1);
+    color: var(--color-gravish-blue);
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    right: 30px;
+    top: 5px;
+    
+}
+
+.discription:hover{
+    background-color:hsl(218, 44%, 87%);
+    cursor: pointer;
+}
+
+.chess-img{
+    position: relative;
+    left: 350px;
+    top: -30px;
+    padding: 0;
+}
+
+.chess-img img{
+    width: 30px;
+    height: 30px;
+}
+/* fourth message */
+.sub-notification{
+display: block;
+}
+
+
+/* mobile quries */
+@media(max-width:768px){
+.mobile-res .chess-img{
+    left: 300px;
+}
+}
+@media(max-width:510px){
+    .mobile-res .chess-img{
+        left: 270px;
+    }
+    }
+    @media(max-width:450px){
+        .mobile-res .chess-img{
+            left: 0;
+            top:20px;
+
+
+        }
+        .mobile-res .chess-img img{
+            width: 30px;
+            height: 30px;
+        }
+        }
+
+
+   
